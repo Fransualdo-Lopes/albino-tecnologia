@@ -12,5 +12,10 @@ pipeline {
         sh 'npm run test -- --passWithNoTests'
       }
     }
+    stage('Dev') {
+      steps {
+        sh 'npm run dev'
+      }
+    }
   }
 }
