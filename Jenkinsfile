@@ -5,7 +5,6 @@ pipeline {
     stage('Install dependencies') {
       steps {
         sh 'npm install'
-        sh 'npm install jest --save-dev'
       }
     }
     stage('Test') {
